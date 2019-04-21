@@ -24,11 +24,27 @@ def end_game
 end
 
 def initial_round
- deal_card * 2  # code #initial_round here
+ first_round=deal_card+deal_card
+ display_card_total(first_round)
+ return first_round
+ 
+ 2  # code #initial_round here
 end
 
-def hit?
- puts "I have no idea what to do here!" # code hit? here
+def hit?(card_total)
+ prompt_user
+ input = get_user_input
+ until input == 'h' || input == 's'
+ invalid_command
+ prompt_user
+ input = get_user_input
+ end
+ if input == 'h'
+   card_total += deal_card
+   elsif input == 's'
+   card_total
+ end
+  # code hit? here
 end
 
 def invalid_command
