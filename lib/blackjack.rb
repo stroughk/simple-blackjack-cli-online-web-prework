@@ -1,5 +1,5 @@
 def welcome
- puts  # code #welcome here
+ puts "Welcome to " # code #welcome here
 end
 
 def deal_card
