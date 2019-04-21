@@ -1,7 +1,3 @@
-##################
-# shared methods #
-##################
-
 def welcome
   # code #welcome here
 end
@@ -14,10 +10,6 @@ def display_card_total(card_total)
   puts "Your cards add up to #{card_total}"
 end
 
-
-##########
-# rounds #
-##########
 
 def welcome
   puts "Welcome to the Blackjack Table"
@@ -63,9 +55,6 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-##########
-# runner #
-##########
 
 def runner
   welcome
