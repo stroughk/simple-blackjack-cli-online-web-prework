@@ -1,33 +1,34 @@
 def welcome
-  # code #welcome here
+  puts "Welcome to Blackjack Table." # code #welcome here
 end
 
 def deal_card
-  # code #deal_card here
+  puts deal_card[1,11] # code #deal_card here
 end
 
 def display_card_total
-  # code #display_card_total here
+  puts "Your cards add up to #{card_total}" # code #display_card_total here
 end
 
 def prompt_user
+  puts "Type 'h' to hit or 's' to stay"
   # code #prompt_user here
 end
 
 def get_user_input
-  # code #get_user_input here
+  receive(:get_user_input).and_return ("ok")# code #get_user_input here
 end
 
 def end_game
-  # code #end_game here
+ puts "Sorry, you hit#{card_total}. Thanks for playing!" # code #end_game here
 end
 
 def initial_round
-  # code #initial_round here
+ deal_card * 2  # code #initial_round here
 end
 
 def hit?
-  # code hit? here
+ puts "I have no idea what to do here!" # code hit? here
 end
 
 def invalid_command
