@@ -16,7 +16,7 @@ def prompt_user
 end
 
 def get_user_input
-  receive(:get_user_input).and_return ("ok")# code #get_user_input here
+  gets.chomp.strip # code #get_user_input here
 end
 
 def end_game
